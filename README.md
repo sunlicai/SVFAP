@@ -1,4 +1,4 @@
-# [\[TAC 2024\] SVFAP: Self-supervised Video Facial Affect Perceiver](https://ieeexplore.ieee.org/abstract/document/10623380)
+# [SVFAP: Self-supervised Video Facial Affect Perceiver](https://ieeexplore.ieee.org/abstract/document/10623380)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/svfap-self-supervised-video-facial-affect/dynamic-facial-expression-recognition-on-dfew)](https://paperswithcode.com/sota/dynamic-facial-expression-recognition-on-dfew?p=svfap-self-supervised-video-facial-affect)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/svfap-self-supervised-video-facial-affect/dynamic-facial-expression-recognition-on)](https://paperswithcode.com/sota/dynamic-facial-expression-recognition-on?p=svfap-self-supervised-video-facial-affect)
@@ -10,6 +10,7 @@
 
 ## 📰 News
 **[2024.09.24]** We upload the code, pre-trained and fine-tuned models.<br>
+**[2024.07.28]** Our paper is accepted by IEEE Transactions on Affective Computing.<br>
 
 ## ✨ Overview
 
@@ -30,7 +31,7 @@ Abstract: Video-based facial affect analysis has recently attracted increasing a
 ## 🚀 Main Results
 
 <p align="center">
-  <img src="figs/radar_plot.png" width=65%> <br>
+  <img src="figs/radar_plot.png" width=50%> <br>
    Comparison with state-of-the-art methods on 9 datasets.
 </p>
 
@@ -104,7 +105,7 @@ Note that, `label` for the pre-training dataset (i.e., VoxCeleb2) is dummy label
     The fine-tuned checkpoints and logs across five folds on DFEW are provided as follows: 
     |  Fold    | UAR        | WR       |      Fine-tuned   Model            |
     | :------: | :--------: | :------: | :-----------------------:          |
-    |  1       | 63.31      | 75.31    | [log](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/ETyu-mn8WyVCti6ifvs7ePMBBm0rV4HyEKNrJVIory3VPA?e=pGEYRA) / [checkpoint](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/EXEnKAHX2ZxPrWvUAJ9Glg0B6GuYbw8ox9Zs3jn7lJ7jJA?e=ffXMQK) | 
+    |  1       | 63.63      | 75.31    | [log](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/ETyu-mn8WyVCti6ifvs7ePMBBm0rV4HyEKNrJVIory3VPA?e=pGEYRA) / [checkpoint](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/EXEnKAHX2ZxPrWvUAJ9Glg0B6GuYbw8ox9Zs3jn7lJ7jJA?e=ffXMQK) | 
     |  2       | 58.82      | 71.68    | [log](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/ESGtilAWM8lJm9TUpTVOcysB11kZjUyFHfqArfyLDDcfcw?e=xDpxUb) / [checkpoint](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/EfkLBkkmGqpPigAzL_S_FFABfuOShaNkrlcsSJLFrw2nHw?e=mKagKP) | 
     |  3       | 64.88      | 74.96    | [log](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/EXRgNapDf1tOv9y1ddW1AkQBOeQNvDk-4YAcf9Gq9VPJ1g?e=bNfvaG) / [checkpoint](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/ESbBQRwY--9Iuah3lUuuglkBwwkevZF4ftGKEDMO-HhxUA?e=3C2rkm) | 
     |  4       | 63.73      | 74.65    | [log](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/ES9drCuXPyBFj8ogdGI_vbgB9wKuk2TAechC2m0p4P0Fkg?e=30yufp) / [checkpoint](https://unioulu-my.sharepoint.com/:u:/g/personal/lsun24_univ_yo_oulu_fi/EaOR9NCzaYVNuqop89cNI94BlqrzeiRmXP-amDL2tTCw5g?e=obLurU) | 
