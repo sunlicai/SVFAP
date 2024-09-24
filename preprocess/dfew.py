@@ -2,7 +2,7 @@
 """
 cmd:
 cd preprocess
-python voxceleb2.py
+python dfew.py
 """
 
 import os
