@@ -31,7 +31,7 @@ Abstract: Video-based facial affect analysis has recently attracted increasing a
 ## 🚀 Main Results
 
 <p align="center">
-  <img src="figs/radar_plot.png" width=50%> <br>
+  <img src="figs/radar_plot.png" width=65%> <br>
    Comparison with state-of-the-art methods on 9 datasets.
 </p>
 
