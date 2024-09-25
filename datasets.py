@@ -11,12 +11,7 @@ class DataAugmentationForVideoMAE(object):
         self.input_mean = [0.485, 0.456, 0.406]  # IMAGENET_DEFAULT_MEAN
         self.input_std = [0.229, 0.224, 0.225]  # IMAGENET_DEFAULT_STD
         normalize = GroupNormalize(self.input_mean, self.input_std)
-        # me: new added
-        if not args.no_augmentation:
-            self.train_augmentation = GroupMultiScaleCrop(args.input_size, [1, .875, .75, .66])
-        else:
-            print(f"==> Note: do not use 'GroupMultiScaleCrop' augmentation during pre-training!!!")
-            self.train_augmentation = IdentityTransform()
+        self.train_augmentation = GroupMultiScaleCrop(args.input_size, [1, .875, .75, .66])
         self.transform = transforms.Compose([
             self.train_augmentation,
             Stack(roll=False),
